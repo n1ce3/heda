@@ -1,0 +1,50 @@
+/* contains everything */
+.mainContainer {
+
+  min-height:     100vh;
+  width:          100%;
+  position:       relative;
+  overflow:       hidden;
+  display:        block;
+  padding-bottom: 45px;
+  text-align:     center;
+
+}
+
+/* contains main content except footer */
+.mainContent {
+
+  --width:      60%;
+  --margin-top: 50px;
+
+  margin-top:   var(--margin-top);
+  width:        relative;
+  display:      inline-block;
+  width:        var(--width);
+  margin-bottom: 40px;
+
+}
+
+// computer
+@media (max-width: 1200px){
+  .mainContent{
+    --width: 60%;
+    --margin-top: 50px;
+  }
+}
+
+// pad
+@media (max-width: 1199px){
+  .mainContent{
+    --width: 85%;
+    --margin-top: 15px;
+  }
+}
+
+// smartphone
+@media (max-width: 749px){
+  .mainContent{
+    --width: 95%;
+    --margin-top: 5px;
+  }
+}

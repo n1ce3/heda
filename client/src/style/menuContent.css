@@ -1,0 +1,46 @@
+.menuContent {
+  padding:         0;
+}
+
+.titleContainer {
+  display:         flex!important;
+  height:          40px!important;
+}
+
+.subTitleContainer {
+  display:         flex!important;
+  align-items:     center!important;
+}
+
+.subTitle a {
+  font-size:       12pt;
+  text-decoration: none;
+  color:           #8C8C8C;
+  transition:      0.3s;
+}
+
+.subTitle:hover a {
+  //font-weight:     bold;
+  color:           #f59926;
+  text-align:      center;
+}
+
+/*.subTitle::after {
+  display:         block;
+	content:         attr(title);
+	font-weight:     bold;
+	height:          0;
+	overflow:        hidden;
+	visibility:      hidden;
+}*/
+
+.material-icons.style {
+  padding-top:     3px;
+  font-size:       18pt;
+  color:           #8C8C8C;
+}
+
+.isActive {
+  font-weight:     bold;
+  color:           rgb(25, 52, 117);
+}
