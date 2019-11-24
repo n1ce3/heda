@@ -10,4 +10,4 @@ For this version to run properly make the following adjustments:
 
 ### License
 
-Copyright © 2019
+Copyright © 2019, Elias Arnold
