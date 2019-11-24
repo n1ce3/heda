@@ -1,0 +1,141 @@
+[
+    {
+        "values": {
+            "title": "Aktuelles",
+            "path": "Aktuelles",
+            "id": "Aktuelles-id",
+            "description": "",
+            "pdfpath": []
+        },
+        "submenu": [
+            {
+                "values": {
+                    "title": "sub11",
+                    "path": "Aktuelles/sub11",
+                    "id": "sub11-id",
+                    "description": "",
+                    "pdfpath": []
+                },
+                "submenu": [
+                    {
+                        "values": {
+                            "title": "sub111",
+                            "path": "Aktuelles/sub11/sub111",
+                            "id": "sub111-id",
+                            "description": "Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen",
+                            "pdfpath": [
+                                {
+                                    "title": "Vertrag 1",
+                                    "path": "ex06.pdf"
+                                }
+                            ]
+                        },
+                        "submenu": []
+                    },
+                    {
+                        "values": {
+                            "title": "sub112",
+                            "path": "Aktuelles/sub11/sub112",
+                            "id": "sub112-id",
+                            "description": "Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen",
+                            "pdfpath": [
+                                {
+                                    "title": "Vertrag 1",
+                                    "path": "ex06.pdf"
+                                },
+                                {
+                                    "title": "Vertrag 2",
+                                    "path": "5-3.pdf"
+                                }
+                            ]
+                        },
+                        "submenu": []
+                    }
+                ]
+            },
+            {
+                "values": {
+                    "title": "sub12",
+                    "path": "Aktuelles/sub12",
+                    "id": "sub12-id",
+                    "description": "",
+                    "pdfpath": []
+                },
+                "submenu": [
+                    {
+                        "values": {
+                            "title": "sub121",
+                            "path": "Aktuelles/sub12/sub121",
+                            "id": "sub121-id",
+                            "description": "Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen",
+                            "pdfpath": [
+                                {
+                                    "title": "Vertrag 1",
+                                    "path": "ex06.pdf"
+                                }
+                            ]
+                        },
+                        "submenu": []
+                    },
+                    {
+                        "values": {
+                            "title": "sub122",
+                            "path": "Aktuelles/sub12/sub122",
+                            "id": "sub122-id",
+                            "description": "Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen",
+                            "pdfpath": [
+                                {
+                                    "title": "Vertrag 1",
+                                    "path": "ex06.pdf"
+                                },
+                                {
+                                    "title": "Vertrag 2",
+                                    "path": "5-3.pdf"
+                                }
+                            ]
+                        },
+                        "submenu": []
+                    }
+                ]
+            },
+            {
+                "values": {
+                    "title": "sub13",
+                    "path": "Aktuelles/sub13",
+                    "id": "sub13-id",
+                    "description": "Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen",
+                    "pdfpath": [
+                        {
+                            "title": "Vertrag 1",
+                            "path": "ex06.pdf"
+                        },
+                        {
+                            "title": "Vertrag 2",
+                            "path": "5-3.pdf"
+                        }
+                    ]
+                },
+                "submenu": []
+            }
+        ]
+    },
+    {
+        "values": {
+            "title": "Angebotspalette",
+            "path": "Angebotspalette",
+            "id": "Angebotspalette-id",
+            "description": "Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen Hier k\u00f6nnte ihre beschreibung stehen",
+            "pdfpath": [
+                {
+                    "title": "Vertrag 1",
+                    "path": "ex06.pdf"
+                },
+                {
+                    "title": "Vertrag 2",
+                    "path": "5-3.pdf"
+                }
+            ]
+        },
+        "submenu": []
+    }
+]

@@ -1,0 +1,105 @@
+.wrapper {
+  --no-cols:              1;
+  display:                grid;
+  grid-template-columns:  repeat(var(--no-cols), minmax(0, 1fr));
+  grid-template-rows:     minmax(0, 1fr);
+  grid-auto-rows:         minmax(0, 1fr);
+  grid-gap:               10px;
+  min-height:             0;  /* NEW */
+  min-width:              0;
+  text-decoration:        none;
+}
+
+
+// here all media custumizan fit no of col and font size
+@media (min-width: 250px){
+  .wrapper {
+    --no-cols: 2;
+  }
+}
+
+@media (min-width: 550px){
+  .wrapper {
+    --no-cols: 3;
+  }
+}
+
+@media (min-width: 750px){
+  .wrapper {
+    --no-cols: 4;
+  }
+}
+
+@media (min-width: 1200px){
+  .wrapper {
+    --no-cols: 5;
+  }
+}
+
+.wrapper::before {
+  content:        '';
+  width:          0;
+  padding-bottom: 100%;
+  grid-row:       1 / 1;
+  grid-column:    1 / 1;
+}
+
+.wrapper > *:first-child {
+  grid-row:       1 / 1;
+  grid-column:    1 / 1;
+}
+
+.box {
+  display:                flex;
+  align-items:            center;
+  justify-content:        center;
+  height:                 100%;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width:                  100%;
+  overflow:               hidden;  /* NEW */
+  min-width:              0;      /* NEW; needed for Firefox */
+  min-height:             0;
+  background-image:       linear-gradient(to bottom,#f59926,#e98609);
+  border-radius:          20px;
+
+   -webkit-transition:    all 0.7s ease; /* Safari and Chrome */
+  -moz-transition:        all 0.7s ease; /* Firefox */
+  -ms-transition:         all 0.7s ease; /* IE 9 */
+  -o-transition:          all 0.7s ease; /* Opera */
+  transition:             all 0.7s ease;
+
+  box-shadow:             0px 0px 20px #E1E1E1;
+}
+
+.box:hover {
+  -webkit-transform:      scale(1.015); /* Safari and Chrome */
+  -moz-transform:         scale(1.015); /* Firefox */
+  -ms-transform:          scale(1.015); /* IE 9 */
+  -o-transform:           scale(1.015); /* Opera */
+   transform:             scale(1.015);
+   //color:                 rgb(25, 52, 117);
+}
+
+//.box::after {
+//  opacity:                0;
+//  transition:             opacity 0.3s ease-in-out;
+//}
+
+//.box:hover::after {
+//  opacity:                1;
+//}
+
+// content style
+.content {
+  margin:                 10px;
+}
+a {
+  font-size:              14pt;
+  color:                  inherit;
+  text-decoration:        inherit;
+}

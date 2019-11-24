@@ -1,0 +1,445 @@
+.head a {
+  display:         flex;
+  height:          40px;
+  font-size:       12pt;
+  font-weight:     bold;
+  align-items:     center;
+  color:           rgb(25, 52, 117);
+}
+
+.tableHead {
+  width:          100%;
+  display:        flex;
+  vertical-align: middle;
+  height:         25px;
+  border-bottom:  solid;
+  border-width:   1.8pt;
+  color:        #f59926;
+}
+.tableHead a {
+  color:      #8C8C8C;
+  font-size:    10pt;
+  font-weight:  normal;
+  width:        100%;
+  height:       20px;
+  padding-right: 10px;
+  padding-left:  5px;
+}
+
+.title {
+  width:        var(--width);
+  padding-left: 4px;
+}
+
+.parent {
+  width:        var(--width);
+}
+
+.description {
+  width:        var(--width);
+}
+
+.pdfs {
+  width:        var(--width);
+}
+
+.edit {
+  width:         var(--width);
+  padding-right: 2px;
+  float: right;
+}
+
+.titleRow {
+  width:          var(--width);
+}
+
+.parentRow {
+  width:          var(--width);
+}
+
+.descriptionRow {
+  width:          var(--width);
+}
+
+.pdfsRow {
+  width:           var(--width);
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+}
+
+.editRow {
+  width:          var(--width);
+  float:          right;
+}
+
+.editRow i {
+  font-size:      12pt;
+  cursor:         pointer;
+  transition:     0.2s;
+}
+
+
+// pad
+@media (max-width: 1099px){
+  .title {
+    --width:        20%;
+  }
+  
+  .parent {
+    --width:        15%;
+  }
+  
+  .description {
+    --width:        48.5%;
+  }
+  
+  .pdfs {
+    --width:        20%;
+  }
+  
+  .edit {
+    --width:         11.5%;
+  }
+
+  .titleRow {
+    width:          20%;
+  }
+  
+  .parentRow {
+    width:          15%;
+  }
+  
+  .descriptionRow {
+    width:          48.5%;
+  }
+  
+  .pdfsRow {
+    width:           20%;
+  }
+  
+  .editRow {
+    width:          11.5%;
+  }
+}
+
+
+// computer
+@media (min-width: 1100px){
+  .title {
+    --width:        20%;
+  }
+  
+  .parent {
+    --width:        15%;
+  }
+  
+  .description {
+    --width:        50%;
+  }
+  
+  .pdfs {
+    --width:        21%;
+  }
+  
+  .edit {
+    --width:        9%;
+  }
+
+  .titleRow {
+    width:          20%;
+  }
+  
+  .parentRow {
+    width:          15%;
+  }
+  
+  .descriptionRow {
+    width:          50%;
+  }
+  
+  .pdfsRow {
+    width:           21%;
+  }
+  
+  .editRow {
+    width:          9%;
+  }
+}
+
+
+.tableRow {
+  display:        flex;
+  width:          100%;
+  text-align:     left;
+  font-weight:    normal;
+  color:        #B4B4B4;
+  padding-bottom: 10px;
+  padding-top:    10px;
+  
+}
+
+.parentContainer {
+  //border-style: solid;
+  border-bottom: 2px solid rgba(25, 52, 117, 0.1);
+  //border-top: 1px solid rgb(25, 52, 117);
+}
+
+.parentHeader {
+  //height: 30px;
+  //display: inline-block;
+  //border-style: solid;
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid rgba(25, 52, 117, 0.1);
+  //padding-bottom: 5px;
+}
+
+.parentName {
+  float: left;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  //margin-bottom: 5px;
+  //border-style: solid;
+  //display: inline-block;
+  border-radius: 1px 10px 1px 1px;
+  background: rgba(25, 52, 117, 0.1);
+  font-size: 11pt;
+  color: rgba(25, 52, 117, 1);
+}
+
+
+.even {
+  background-color: #F8F8F8;
+}
+
+.odd {
+  background-color: #FFFFFF
+}
+
+.tableRow:hover {
+  background-color: rgba(25, 52, 117, 0.1);
+}
+
+.tableRow a {
+  color:          #2B2B2B;
+  font-size:      10pt;
+  font-weight:    normal;
+  height:         100%;
+  padding-right:  10px;
+  padding-left:   5px;
+  word-break:     break-word;
+}
+
+
+.editRow i:hover{
+  color:        #f59926;
+}
+
+.isNotActive:hover {
+  font-size:      12pt;
+  cursor:         default;
+  color:          #8C8C8C!important;
+}
+
+.isNotActive {
+  color:          #8C8C8C!important;
+}
+
+.material-icons.move {
+  font-size: 22pt;
+  margin-right:  -6px;
+  margin-left:  -4px;
+  float: left;
+  //border-style: solid;
+}
+
+.pdfFile {
+  font-size: 12pt;
+  margin-top: -1px;
+  //border-style: solid;
+}
+
+.table {
+  margin-top:     10px;
+}
+
+.pdfTitle {
+  display:        flex;
+  width:          100%;
+  height:         100%;
+  //border-style: solid;
+}
+
+.pdfTitle a {
+  //border-style: solid;
+}
+
+.pdfWraper {
+  width:          100%;
+  display:        inline-block;
+}
+
+.addTableRow {
+  display:        flex;
+  margin-top:     10px;
+  margin-left:    5px;
+}
+
+.addTableRow i {
+  margin-right:   auto;
+  color:        #f59926;
+  transition:     transform .2s;
+  cursor:         pointer;
+}
+
+.addTableRow i:hover {
+  transform:      scale(1.2);
+}
+
+
+.tableRowEdit {
+  display: inline-block;
+  width: 100%;
+  //padding-bottom: 10px;
+  //border-style: solid;
+}
+
+.editWraper {
+  width:          100%;
+  height:         100%;
+  display:        flex;
+}
+
+.leftEdit {
+  width: 23%;
+  //border-style: solid;
+  padding-left: 7px;
+  //padding-right: 5px;
+  position: relative;
+}
+
+.controlEndpage {
+  //border-style: solid;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.centerEdit {
+  width: 48%;
+  //border-style: solid;
+  padding-left: 7px;
+  //padding-right: 5px;
+  margin-bottom: 5px;
+}
+
+.rightEdit {
+  width: 30%;
+  padding-left: 7px;
+  //padding-right: 5px;
+  //border-style: solid;
+}
+
+.selectFileWraper {
+  display: flex;
+}
+
+.pdfFileWraper {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.23);
+  border-width: 1px;
+  border-radius: 2px;
+  //height: 100px;
+}
+
+.pdfFileWraper i {
+  font-size:      12pt;
+  cursor:         pointer;
+  transition:     0.2s;
+}
+
+.pdfFileWraper i:hover {
+  color:        #E95555;
+  //transform:      scale(1.3);
+}
+
+.saveEdit {
+  margin-bottom:  8px;
+  width:          5%;
+  position:       relative;
+}
+
+.clear {
+  color:        #E95555;
+  position:       absolute;   
+  left:           0;
+  right:          0;
+  top:            13px;
+
+  transition:     transform .2s;
+  cursor:         pointer;
+}
+
+.clear:hover {
+  transform:      scale(1.2);
+}
+
+.done {
+  color:        #65C96A;
+  position:       absolute;                  
+  bottom:         5px;
+  left:           0;
+  right:          0;
+
+  transition:     transform .2s;
+  cursor:         pointer;
+}
+
+.savingState {
+  position:       absolute;    
+  bottom:         5px;
+  left:           0;
+  right:          0;  
+}
+
+.done:hover {
+  transform:      scale(1.2);
+}
+
+.without-padding label {
+  transform: translate(14px, 12px) scale(1);
+}
+
+.without-padding input {
+  padding: 10px;
+}
+.without-padding {
+  padding: 10px;
+}
+
+.selectFileWraper i {
+  font-size: 12pt;
+
+  transition:     transform .2s;
+  cursor:         pointer;
+}
+
+.selectFileWraper i:hover {
+  //transform:      scale(1.3);
+  color:        #E95555;
+}
+
+.pdfpathError {
+  font-size:    8pt;
+  color:      #E95555;
+  text-align:   left;
+}
+
+// drag 
+.dragHandle {
+  cursor: move !important;
+}

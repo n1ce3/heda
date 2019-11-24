@@ -1,0 +1,223 @@
+.endContainer {
+  margin-bottom: 40px;
+  height: 100%;
+}
+
+.parentPathContainer {
+  display:      flex;
+  flex-wrap:    wrap;
+  //height:       40px;
+  color:        #2B2B2B;
+
+  min-height:         32px;
+  margin-bottom:      8px;
+  margin-top:         8px;
+  width:              100%;
+}
+
+
+/* Title styling */
+.endTitle {
+  padding-top:  5px;
+  text-align:   center;
+  font-size:    16pt;
+  font-weight:  bold;
+  color:        rgb(25, 52, 117);
+}
+
+/* Description styling */
+.endDescription {
+  padding-top:  10px;
+  text-align:   left;
+  font-size:    11pt;
+  font-weight:  normal;
+}
+
+/* Footer styling */
+.pdfFooter {
+  position:     relative;
+  display:      inline-table;
+  width:        100%;
+  margin-top:   5px;
+}
+
+.pageNumber {
+  position:     absolute;
+  display:      table-cell;
+}
+
+.pageNumber a {
+  font-size:    11pt;
+  font-weight:  normal;
+}
+
+.downloadContainer {
+  display:      flex;
+  float:        right;
+  right:        0;
+  transition:   0.3s;
+}
+
+.downloadContainer i {
+  cursor:       pointer;
+  font-size:    13pt;
+  font-weight:  normal;
+}
+
+.downloadContainer a {
+  cursor:       pointer;
+  font-size:    11pt;
+  font-weight:  normal;
+}
+
+.downloadContainer:hover {
+  color:        #f59926;
+}
+
+/* PDF styling */
+.pdfWrapper {
+  margin-top:   20px;
+  position:     relative;
+  display:      inline-table;
+  width:        100%!important;
+  box-shadow:   0px 0px 20px 0px #E1E1E1;
+}
+
+.buttonBack {
+  position:     absolute;
+  display:      table-cell;
+  width:        30%;
+  height:       100%;
+  z-index:      3;
+  cursor:       pointer;
+}
+
+#iconleft {
+  display:      table-cell;
+  position:     absolute;
+  -ms-transform:translateY(-50%);
+  transform:    translateY(-50%);
+  top:          50%;
+  font-size:    40pt;
+  color:        #8C8C8C;
+  padding-left: 3%;
+
+  opacity: 0;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.buttonBack:hover #iconleft {
+  opacity:      1;
+}
+
+.buttonForward {
+  position:     absolute;
+  display:      table-cell;
+  width:        30%;
+  height:       100%;
+  z-index:      2;
+  right:        0;
+  cursor:       pointer;
+}
+
+#iconright {
+  display:      table-cell;
+  position:     absolute;
+  -ms-transform:translateY(-50%);
+  transform:    translateY(-50%);
+  top:          50%;
+  font-size:    40pt;
+  color:        #8C8C8C;
+  right:        3%;
+
+  opacity: 0;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.buttonForward:hover #iconright {
+  opacity:      1;
+}
+
+.pdfSheet {
+  display:      table-cell;
+  height:       100%;
+  width:        100%;
+}
+
+/* style pdf options */
+.pdfOptionWrapper {
+  margin-top:             20px;
+  display:                grid;
+  grid-gap:               15px 5px;
+
+  --no-cols:              1;
+  display:                grid;
+  grid-template-columns:  repeat(var(--no-cols), minmax(0, 1fr));
+  grid-template-rows:     minmax(0, 1fr);
+  grid-auto-rows:         minmax(0, 1fr);
+  min-height:             0;  /* NEW */
+  min-width:              0;
+  //margin-bottom: 5px;
+  text-decoration:        none;
+}
+
+@media (min-width: 250px){
+  .pdfOptionWrapper {
+    --no-cols: 2;
+  }
+}
+
+@media (min-width: 550px){
+  .pdfOptionWrapper {
+    --no-cols: 3;
+  }
+}
+
+@media (min-width: 750px){
+  .pdfOptionWrapper {
+    --no-cols: 4;
+  }
+}
+
+@media (min-width: 1200px){
+  .pdfOptionWrapper {
+    --no-cols: 5;
+  }
+}
+
+.pdfBox {
+  background-color: #F5F5F5;
+  cursor:           pointer;
+  border-radius:    5px;
+  padding:          5px 15px 5px 15px;
+  display:          flex;
+  align-items:      center;
+  text-align:       left;
+  transition:       0.3s;
+  height:           100%;
+  overflow:         hidden;
+  margin-bottom:    5px;
+
+}
+
+.pdfBox a {
+  font-size:    11pt;
+  font-weight:  normal;
+}
+
+.active {
+  background-color: #ECECEC;
+  color:            rgb(25, 52, 117);
+  cursor:           default;
+}
+
+.pdfBox:hover {
+  color: rgb(25, 52, 117);
+
+}
