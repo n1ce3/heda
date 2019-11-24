@@ -5,8 +5,8 @@ This version V1.2 is the latest version.
 ### Notes
 
 For this version to run properly make the following adjustments:
-* 1
-* 2
+* In `packages.json` change `"start": "react-scripts start"` to `"start": "PORT=XX react-scripts start"` to make it run on Port XX.
+* In `packages.json` line `"proxy": "http://localhost:5000"` replace `localhost` with the actual IP address.
 
 ### License
 
